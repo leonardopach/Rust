@@ -1,31 +1,36 @@
 fn main() {
-    let numero = 3;
+    println!("hello world");
+    let s = "ola";
+    println!("{s}");
 
-    if numero < 5 {
-        println!("condição era verdadeiro");
-    } else {
-        println!("Condição era falsa");
+    {
+        let _s = "texto";
     }
+    let mut s = String::from("texto");
 
-    let condicao = true;
-    let numero = if condicao { 5 } else { 6 };
-    println!("O valor do número é: {}", numero);
+    println!("{s}");
 
-    let mut numero = 3;
+    s.push_str(", mundo");
+    println!("{s}");
 
-    while numero != 0 {
-        println!("{}", numero);
+    let s1 = String::from("Texto");
+    let s2 = s1.clone();
 
-        numero = numero - 1;
-    }
+    println!("s1={s1} s2={s2}");
 
-    let a = [10, 20, 30, 40, 50];
+    let s = String::from("texto");
 
-    for elemento in a.iter() {
-        println!("{elemento}");
-    }
+    toma_posse(s);
 
-    for numero in (1..5).rev() {
-        println!("{}", numero);
-    }
+    let x = 5;
+
+    faz_uma_copia(x);
+}
+
+fn toma_posse(uma_string: String) {
+    println!("{uma_string}");
+}
+
+fn faz_uma_copia(um_inteiro: i32) {
+    println!("{}", um_inteiro);
 }
