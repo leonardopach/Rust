@@ -1,1 +1,1 @@
-/home/leonardopach/Desktop/Rust/estudos-rust/target/debug/estudos-rust: /home/leonardopach/Desktop/Rust/estudos-rust/src/main.rs
+/home/leo/Desktop/rust/estudos-rust/target/debug/estudos-rust: /home/leo/Desktop/rust/estudos-rust/src/main.rs
