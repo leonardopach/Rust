@@ -1,4 +1,4 @@
-mod slice;
+mod struct_rust;
 fn main() {
-    slice::slice();
+    struct_rust::struct_rust();
 }
